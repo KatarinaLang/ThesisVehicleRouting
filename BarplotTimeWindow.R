@@ -1,0 +1,4 @@
+ridgeData4<-read.csv("~/Downloads/LengthTW/PeaksTW",header = TRUE, sep = "\t", row.names = 1, )
+ridgeData4Tr<-read.csv("~/Downloads/LengthTW/PeaksTWTr",header = TRUE, sep = "\t", row.names = 1)
+barplot(as.matrix(ridgeData4[,]),beside = TRUE, legend=rownames(ridgeData4),xlab = "Number of peaks", ylab = "Relative frequency", main = "Relative frequency of number of peaks in the distribution of time window lengths",  col = c( "seashell1", "lightgoldenrod1",  "goldenrod3","lightsalmon", "red3", "plum1","skyblue1","darkseagreen1",  "turquoise", "blue1", "darkgreen", "grey25"))
+barplot(as.matrix(ridgeData4Tr[,1:12]),beside = TRUE, legend=rownames(ridgeData4Tr),xlab = "Algorithms",ylab = "Relative frequency of peaks", main = "Relative frequency of number of peaks in the distribution of lengths of time windows per algorithm (all instances that are listed in the BKR)", col = c("lightgoldenrod1","lightsalmon", "plum1", "skyblue1"))

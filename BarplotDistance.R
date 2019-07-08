@@ -1,0 +1,2 @@
+ridgeData4<-read.csv("~/Downloads/PeaksDistanceHubFolder/RelFreqDistanceOverall",header = TRUE, sep = "\t", row.names = 1)
+barplot(as.matrix(ridgeData4[,]),beside = TRUE, xlab = "Overall",ylab = "Relative frequency of peaks", main = "Relative frequency of number of peaks in the distribution of distances from the hub", col = c("lightgoldenrod1","lightsalmon", "plum1", "skyblue1"))
